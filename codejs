@@ -1,0 +1,8 @@
+// scrollbar fix
+// this js paste console
+[].forEach.call(document.querySelectorAll('*'), function (el) {
+    if (el.offsetWidth > document.body.offsetWidth) {
+        console.warn('Overflowing element:', el);
+        el.style.outline = '2px solid red'; // highlight
+    }
+});
